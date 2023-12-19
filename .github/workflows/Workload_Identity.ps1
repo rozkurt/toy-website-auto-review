@@ -1,3 +1,5 @@
+# All the necessary steps to create a workload identity for your deployments workflow.
+
 $azureContext = Get-AzContext
 
 $githubOrganizationName = 'rozkurt'
