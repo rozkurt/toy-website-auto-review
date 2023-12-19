@@ -17,6 +17,7 @@ var appServiceAppName = 'toy-website-${resourceNameSuffix}'
 var appServicePlanName = 'toy-website'
 var storageAccountName = 'mystorage${resourceNameSuffix}'
 
+// Adding this unused variable on purpose
 var appServiceAppLinuxFrameworkVersion = 'node|14-lts'
 
 // Define the SKUs for each component based on the environment type.
@@ -65,7 +66,7 @@ resource appServiceApp 'Microsoft.Web/sites@2022-03-01' = {
     serverFarmId: appServicePlan.id
     httpsOnly: true
     siteConfig: {
-      linuxFxVersion: 'node|14-lts'
+      linuxFxVersion: appServiceAppLinuxFrameworkVersion
     }
   }
 }
