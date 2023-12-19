@@ -18,7 +18,7 @@ var appServicePlanName = 'toy-website'
 var storageAccountName = 'mystorage${resourceNameSuffix}'
 
 // Adding this unused variable on purpose
-var appServiceAppLinuxFrameworkVersion = 'node|14-lts'
+var appServiceAppLinuxFrameworkVersion = 'DOCKER|dockersamples/static-site:latest'
 
 // Define the SKUs for each component based on the environment type.
 var environmentConfigurationMap = {
